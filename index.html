@@ -1,258 +1,173 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Verificação de Segurança</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>64.742.674 Jurandir de Almeida Brito</title>
 
 <style>
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-}
-
 body{
-  font-family: Arial, Helvetica, sans-serif;
-  background: linear-gradient(135deg,#e2e8f0,#f8fafc);
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  height:100vh;
+    margin:0;
+    font-family:"Segoe UI",Arial,sans-serif;
+    background:#f4f6f9;
+    color:#333;
 }
-
-/* Container */
-.container{
-  width:100%;
-  max-width:380px;
-  text-align:center;
-  padding:15px;
+header{
+    background:linear-gradient(135deg,#0a2a4f,#154a8a);
+    padding:25px 40px;
+    color:#fff;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
 }
-
-/* Card */
+header h1{
+    margin:0;
+    font-size:26px;
+}
+nav a{
+    color:#fff;
+    text-decoration:none;
+    margin-left:25px;
+}
+.hero{
+    padding:100px 20px;
+    text-align:center;
+    color:#fff;
+    background:url('https://images.unsplash.com/photo-1519003722824-194d4455a60c') center/cover no-repeat;
+}
+.hero h2{
+    font-size:42px;
+    text-shadow:0 3px 8px rgba(0,0,0,.4);
+}
+.hero p{
+    font-size:20px;
+}
+section{
+    max-width:1100px;
+    margin:60px auto;
+    padding:40px;
+    background:#fff;
+    border-radius:12px;
+    box-shadow:0 4px 16px rgba(0,0,0,.1);
+}
+h2{
+    color:#0a2a4f;
+}
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
 .card{
-  background:#ffffff;
-  border-radius:12px;
-  padding:25px;
-  box-shadow:0 10px 30px rgba(0,0,0,0.1);
-  animation:fadeIn 0.6s ease;
+    background:#f9fbfd;
+    padding:25px;
+    border-radius:12px;
+    border:1px solid #e3e9f0;
 }
-
-.title{
-  font-size:20px;
-  color:#1e293b;
-  margin-bottom:8px;
-  font-weight:600;
+.card h3{
+    color:#154a8a;
 }
-
-.subtitle{
-  font-size:13px;
-  color:#475569;
-  margin-bottom:20px;
+footer{
+    background:#0a2a4f;
+    color:#fff;
+    text-align:center;
+    padding:25px;
+    margin-top:60px;
 }
-
-/* Captcha */
-.captcha-box{
-  border:1px solid #d1d5db;
-  border-radius:8px;
-  padding:15px;
-  background:#f9fafb;
-}
-
-.captcha-row{
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-}
-
-/* Área checkbox */
-.check-area{
-  display:flex;
-  align-items:center;
-  gap:10px;
-  padding:10px;
-  border-radius:6px;
-  cursor:pointer;
-  transition:0.2s;
-}
-
-.check-area:hover{
-  background:#e2e8f0;
-}
-
-.check-area input{
-  width:22px;
-  height:22px;
-  cursor:pointer;
-  accent-color:#16a34a;
-  outline:none;
-  box-shadow:none;
-}
-
-.check-area input:focus{
-  outline:none;
-  box-shadow:none;
-}
-
-.check-text{
-  font-size:14px;
-  color:#1e293b;
-}
-
-/* Marca */
-.captcha-brand{
-  text-align:center;
-  font-size:10px;
-  color:#64748b;
-}
-
-.captcha-brand img{
-  width:34px;
-  display:block;
-  margin:0 auto 3px;
-  user-select:none;
-}
-
-/* Loader */
-.loader{
-  width:22px;
-  height:22px;
-  border:3px solid #cbd5f5;
-  border-top:3px solid #2563eb;
-  border-radius:50%;
-  animation:spin 1s linear infinite;
-  display:none;
-}
-
-@keyframes spin{
-  0%{transform:rotate(0);}
-  100%{transform:rotate(360deg);}
-}
-
-/* Rodapé */
-.footer{
-  margin-top:15px;
-  font-size:12px;
-  color:#64748b;
-}
-
-.footer span{
-  display:block;
-  margin-top:4px;
-  color:#94a3b8;
-}
-
-/* Selo segurança */
-.secure{
-  margin-top:15px;
-  font-size:12px;
-  color:#16a34a;
-  font-weight:600;
-}
-
-/* animação */
-@keyframes fadeIn{
-  from{
-    opacity:0;
-    transform:translateY(15px);
-  }
-  to{
-    opacity:1;
-    transform:translateY(0);
-  }
+footer a{
+    color:#79b8ff;
+    text-decoration:none;
 }
 </style>
 </head>
-
 <body>
 
-<div class="container">
+<header>
+    <h1>64.742.674 Jurandir de Almeida Brito</h1>
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="politica-de-privacidade.html">Política de Privacidade</a>
+    </nav>
+</header>
 
-  <div class="card">
-
-    <div class="title">Verificação de Segurança</div>
-
-    <div class="subtitle">
-      Confirme que você é humano para continuar
-    </div>
-
-    <div class="captcha-box">
-
-      <div class="captcha-row">
-
-        <label class="check-area">
-
-          <input type="checkbox" id="check">
-
-          <div id="loader" class="loader"></div>
-
-          <span class="check-text" id="text">
-            Não sou um robô
-          </span>
-
-        </label>
-
-        <div class="captcha-brand">
-
-          <img src="https://www.gstatic.com/recaptcha/api2/logo_48.png">
-
-          reCAPTCHA
-          <br>
-
-          <span style="font-size:9px;">
-            Privacidade - Termos
-          </span>
-
-        </div>
-
-      </div>
-
-    </div>
-
-    <div class="secure">
-      ✔ Ambiente seguro e protegido
-    </div>
-
-    <div class="footer">
-      Após marcar a opção, a verificação será realizada automaticamente
-
-      <span>
-        Isso ajuda a proteger o sistema contra acessos indevidos
-      </span>
-    </div>
-
-  </div>
-
+<div class="hero">
+    <h2>Transporte Rodoviário de Cargas</h2>
+    <p>Compromisso, segurança e eficiência para atender às necessidades logísticas.</p>
 </div>
 
-<script>
-const check = document.getElementById("check");
-const loader = document.getElementById("loader");
-const text = document.getElementById("text");
+<section>
+    <h2>Quem Somos</h2>
 
-check.addEventListener("change", () => {
+    <p>
+        A empresa <strong>64.742.674 Jurandir de Almeida Brito</strong>,
+        inscrita no CNPJ <strong>64.742.674/0001-44</strong>,
+        foi fundada em <strong>27/01/2026</strong> na cidade de
+        <strong>Vitória da Conquista - BA</strong>.
+    </p>
 
-  if(check.checked){
+    <p>
+        Sua atividade principal é
+        <strong>49.30-2-01 - Transporte rodoviário de carga, exceto produtos perigosos e mudanças, municipal</strong>,
+        mantendo sua situação cadastral <strong>Ativa</strong>.
+    </p>
+</section>
 
-    loader.style.display = "inline-block";
+<section>
+    <h2>Nossos Serviços</h2>
 
-    text.innerText = "Verificando...";
+    <div class="grid">
 
-    setTimeout(() => {
+        <div class="card">
+            <h3>Transporte de Cargas</h3>
+            <p>Serviços de transporte com foco em segurança, pontualidade e qualidade.</p>
+        </div>
 
-      loader.style.display = "none";
+        <div class="card">
+            <h3>Logística Local</h3>
+            <p>Soluções para movimentação de mercadorias dentro do município e região.</p>
+        </div>
 
-      text.innerText = "Verificado ✔";
+        <div class="card">
+            <h3>Atendimento Personalizado</h3>
+            <p>Compromisso com a satisfação e necessidades específicas de cada cliente.</p>
+        </div>
 
-      // REDIRECIONAMENTO
-      window.location.href = "https://portaldetrandigital.com/sc/FSjR";
+        <div class="card">
+            <h3>Agilidade Operacional</h3>
+            <p>Processos eficientes para garantir entregas dentro dos prazos estabelecidos.</p>
+        </div>
 
-    }, 1800);
+    </div>
+</section>
 
-  }
+<section>
+    <h2>Nossos Valores</h2>
 
-});
-</script>
+    <div class="grid">
+
+        <div class="card">
+            <h3>Responsabilidade</h3>
+            <p>Atuação ética e comprometida com a qualidade dos serviços prestados.</p>
+        </div>
+
+        <div class="card">
+            <h3>Segurança</h3>
+            <p>Cuidados em todas as etapas do transporte de mercadorias.</p>
+        </div>
+
+        <div class="card">
+            <h3>Confiança</h3>
+            <p>Relacionamentos duradouros baseados em transparência e profissionalismo.</p>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    © 2026 64.742.674 Jurandir de Almeida Brito • CNPJ 64.742.674/0001-44
+    <br><br>
+    <a href="politica-de-privacidade.html">Política de Privacidade</a>
+</footer>
 
 </body>
 </html>
